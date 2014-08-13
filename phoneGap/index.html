@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uts-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+        <title>jQuery Mobile</title>
+
+
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+
+
+
+
+        <script src="scripts/my_ui.js"></script>
+
+
+        <link rel="stylesheet" href="styles/my_styles.css" />
+
+    </head>
+
+<body>
+
+<div data-role="page" id="home">
+<header data-role="header">
+    <h1>Radmation's Pizza</h1>
+    <a href="#home">Home</a>
+</header>
+
+<article data-role="content">
+
+    <ul data-role="listview" data-filter="true">
+        <li>
+            <a href="#call_us">
+                <h1>Call Us</h1>
+                <img src="images/pizza1.jpg"  class="full_screen" alt="Pizza"/>
+                <p>Description here about the web page this leads too</p>
+            </a>
+        </li>
+        <li>
+            <a href="#menu">
+                <h1>Menu</h1>
+                <img src="images/pizza2.jpg"  class="full_screen" alt="Pizza"/>
+                <p>Description here about the web page this leads too</p>
+            </a>
+        </li>
+        <li>
+            <a href="#order">
+                <h1>Order</h1>
+                <img src="images/pizza3.jpg"  class="full_screen" alt="Pizza"/>
+                <p>Description here about the web page this leads too</p>
+            </a>
+        </li>
+        <li>
+            <a href="#location">
+                <h1>Location</h1>
+                <img src="images/pizza4.jpg"  class="full_screen" alt="Pizza"/>
+                <p>Description here about the web page this leads too</p>
+            </a>
+        </li>
+        <li>
+            <a href="#about_us">
+                <h1>About Us</h1>
+                <img src="images/pizza5.jpg"  class="full_screen" alt="Pizza"/>
+                <p>Description here about the web page this leads too</p>
+            </a>
+        </li>
+    </ul>
+</article>
+
+<footer data-role="footer" data-position="fixed">
+    <nav data-role="navbar">
+        <ul>
+            <li><a href="#menu" data-icon="grid">Menu</a></li>
+            <li><a href="#call_us" data-icon="star">Call us</a></li>
+            <li><a href="#order" data-icon="check">Order</a></li>
+            <li><a href="#location" data-icon="gear">Location</a></li>
+            <li><a href="#about_us" data-icon="alert">About Us</a></li>
+        </ul>
+    </nav>
+</footer>
+</div> <!-- END OF MAIN PAGE -->
+
+
+<div data-role="page" id="menu"><!-- PAGE START MENU -->
+    <header data-role="header">
+        <h1 class="page_title">RP's Menu</h1>
+        <a href="#home" data-icon="arrow-l">Home</a>
+    </header>
+    <article>
+
+        <ul data-role="listview">
+            <li data-role="list-divider">Menu</li>
+            <li>
+                    <h1 >Toppings</h1>
+                    <img src="images/pizza1.jpg"  class="full_screen" alt="Pizza"/>
+                    <ul data-filter="true">
+
+                        <li>Pepperoni</li>
+                        <li>Cheese</li>
+                        <li>Pineapple</li>
+                        <li>Bacon</li>
+                        <li>Salami</li>
+                        <li>Olives</li>
+                        <li>Anchovies</li>
+                        <li>Canadian Bacon</li>
+                        <li>Green and Red Peppers</li>
+                        <li>Jalapenos</li>
+                    </ul>
+            </li>
+            <li>
+            <h1 >Crusts</h1>
+            <img src="images/crust1.jpg"  class="full_screen" alt="Pizza"/>
+            <ul data-filter="true">
+
+                <li>Stuffed</li>
+                <li>Cheesey</li>
+                <li>Thin</li>
+                <li>Regular</li>
+            </ul>
+        </li>
+            <li>
+                <h1>Drinks</h1>
+                <img src="images/drinks1.jpg"  class="full_screen" alt="Pizza"/>
+                <ul data-filter="true">
+                    <li data-role="list-divider">Sodas</li>
+                    <li>Coca-Cola</li>
+                    <li>Sprite</li>
+                    <li>Dr.Pepper</li>
+                    <li>Orange Soda</li>
+                    <li data-role="list-divider">Beer</li>
+                    <li>Hefenweizen</li>
+                    <li>Blue Moon</li>
+                    <li>Budweiser</li>
+                    <li>Rolling Rock</li>
+                    <li>Kona Longboard</li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </article>
+</div> <!-- END OF PAGE -->
+
+<div data-role="page" id="call_us"> <!-- PAGE START CALL US -->
+    <header data-role="header">
+        <h1>RP's Call Us</h1>
+        <a href="#home" data-icon="arrow-l">Home</a>
+    </header>
+    <article data-role="content">
+            <a href="tel: 555-555-5555" data-role="button">555-555-5555</a>
+            <a href="sms://555-555-5555" data-role="button">Order Now</a> <!--will text-->
+        <!--<a href="mailto:radmation@yahoo.com" data-role="button">Order Now</a>    EMAIL   -->
+    </article>
+</div> <!-- END OF PAGE -->
+
+
+
+<div data-role="page" id="location"> <!-- PAGE START LOCATION -->
+    <header data-role="header">
+        <h1>RP's Location</h1>
+        <a href="#home" data-icon="arrow-l">Home</a>
+    </header>
+    <article>
+
+        <h1 class="page_heading">Location</h1>
+
+        <div id="map"></div>
+
+    </article>
+
+</div> <!-- END OF PAGE -->
+
+<div data-role="page" id="about_us"> <!-- PAGE START ABOUT US -->
+    <header data-role="header">
+        <h1>RP's About Us</h1>
+        <a href="#home" data-icon="arrow-l" >Home</a>
+    </header>
+    <article>
+        <h1 class="page_heading">About Us</h1>
+         <p class="text_padding">We are a family owned and operated pizza eatery that pride ourselves on our distinct flavours and one of a kind atmosphere.</p>
+    </article>
+</div> <!-- END OF PAGE -->
+
+                                                        <!--      ORDERS HERE BELOW        -->
+
+<div data-role="page" id="order"> <!-- PAGE START ORDER--> <!--           THIS IS THE ORDER MAIN PAGE HERE ----------------------->
+    <header data-role="header">
+        <h1>RP's Order</h1>
+        <a href="#home" data-icon="arrow-l">Home</a>
+    </header>
+    <article>
+
+        <ul data-role="listview">
+            <li>
+                <a href="#pizzas">
+                    <h1>Pizzas</h1>
+                    <img src="images/pizza2.jpg"  class="full_screen" alt="Pizza"/>
+
+                </a>
+            </li>
+            <li>
+                <a href="#drinks">
+                    <h1>Drinks</h1>
+                    <img src="images/drinks1.jpg"  class="full_screen" alt="Pizza"/>
+
+                </a>
+            </li>
+            <li data-role="list-divider">My Order</li>
+            <li>
+                <a href="#my_order">
+                    <h1>My Order <span class="ui-li-count add_order">0</span></h1>
+                    <img src="images/pizza5.jpg"  class="full_screen" alt="Pizza"/>
+
+                </a>
+            </li>
+        </ul>
+
+    </article>
+</div> <!-- END OF PAGE -->
+
+<div data-role="page" id="pizzas"> <!--ORDER PIZZA-->
+    <header data-role="header">
+        <h1>Order Pizzas</h1>
+        <a href="#order" data-icon="arrow-l" >Order</a>
+    </header>
+    <article>
+
+        <h1 class="page_heading">Order</h1>
+        <ul data-role="listview">
+            <li>
+
+            <div data-product="2010" class="products">
+                <span data-name="Pepperoni Pizza">Peperoni Pizza</span>
+                <span data-price="12.99">12.99</span>
+                <span class="description">Delicious Homemade Peperoni Pizza.</span>
+            </div>
+
+            </li>
+            <li>
+
+            <div data-product="2011" class="products">
+                <span data-name="Bacon Pizza">Bacon Pizza</span>
+                <span data-price="12.99">12.99</span>
+                <span class="description">Delicious Homemade Bacon Pizza.</span>
+            </div>
+            </li>
+            <li>
+
+            <div data-product="2012" class="products"><!--ID From Database-->
+                <span data-name="Hawaiian Pizza">Hawaii Style Pizza</span><!--name from database-->
+                <span data-price="12.99">12.99</span><!--Price from database-->
+                <span class="description">Delicious Homemade BHawaii Styled Pizza.</span>
+
+            </div>
+
+            </li>
+
+        </ul>
+
+    </article>
+</div> <!-- END OF PAGE -->
+
+<div data-role="page" id="drinks"> <!--  ORDER DRINKS -->
+    <header data-role="header">
+        <h1>Order Drinks</h1>
+        <a href="#order" data-icon="arrow-l" >Order</a>
+    </header>
+    <article>
+        <h1 class="page_heading">Order</h1>
+
+        <ul data-role="listview">
+            <li>
+
+        <div data-product="1010" class="products">
+            <span data-name="Coke">Coca-Cola</span>
+            <span data-price="2.99">2.99</span>
+            <span class="description">Ice Cold Coca-Cola.</span>
+        </div>
+            </li>
+            <li>
+
+        <div data-product="1011" class="products">
+            <span data-name="Dr.Pepper">Dr.Pepper</span>
+            <span data-price="2.99">2.99</span>
+            <span class="description">Ice Cold Dr.Pepper.</span>
+        </div>
+            </li>
+            <li>
+
+        <div data-product="1012" class="products"><!--ID From Database-->
+            <span data-name="Sprite">Sprite</span><!--name from database-->
+            <span data-price="2.99">2.99</span><!--Price from database-->
+            <span class="description">Ice Cold Sprite.</span>
+
+        </div>
+            </li>
+            </ul>
+
+    </article>
+</div> <!-- END OF PAGE -->
+
+<div data-role="page" id="my_order"> <!--  MY ORDER -->
+    <header data-role="header">
+        <h1>My Order</h1>
+        <a href="#order" data-icon="arrow-l" >Order</a>
+    </header>
+    <article>
+
+
+        <ul data-role="listview">
+            <li>
+                <div id="cart" >
+                </div>
+            </li>
+
+
+            <li>
+                <button id="buy">Buy Now</button>
+            </li>
+
+            <li>
+                <button id="save_order">Save Order</button>
+                <button id="load_order">Load Order</button>
+            </li>
+
+        </ul>
+
+    </article>
+</div> <!-- END OF PAGE -->
+
+
+
+</body>
+</html>
